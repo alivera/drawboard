@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Paint Pro</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.6/slick.min.css"/>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+
+<body>
+
+<header class="header">
+	<h1>Digital Art Studio<span> by Ali Amirazizi</span></h1>
+</header>
+
+<div class="filler"></div>
+	<!--Carousel Picture Viewer-->
+	<div class="slides">
+		<div><img src="img/main1.jpeg" width="1200" height="400" alt=""></div>
+		<div><img src="img/main2.jpeg" width="1200" height="400" alt=""></div>
+		<div><img src="img/main3.jpeg" width="1200" height="400" alt=""></div>
+		<div><img src="img/main4.jpg" width="1200" height="400" alt=""></div>
+		<div><img src="img/main5.jpg" width="1200" height="400" alt=""></div>
+	</div>
+
+<h2>Drawing Studio</h2>	
+<div id="main">
+	<!--Drawing Canvas Panel-->
+		<div id='button'>
+	        <button type="button">Pen</button>
+	        <button type="button">Line</button>
+	        <button type="button">Clear</button><br>
+	        <form>
+	            Brush Size (0-20)
+	            <input type="range" min="0" max="20" id="brushSlider" step="1" value="5" onchange="changeLineWidth(this.value);">
+	            <input type="color" id="colorInput" value="#000000" onchange="pickColor(this.value);">
+	        </form>
+	    </div>
+
+	<!--Drawing Canvas-->
+	<canvas id="canvas" width="800" height="450"></canvas>
+</div>
+
+<!--Footer -->
+<footer>
+	<span>2015</span>
+</footer>
+
+<!--Scripts & Plugins-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">	</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.6/slick.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
